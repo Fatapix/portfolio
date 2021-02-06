@@ -13,7 +13,7 @@ export default function Header() {
                 </a>
             </nav>
             <nav className="navigation-bar">
-                <ul>
+                <ul className="links">
                     <li className="item">
                         <a className="link" href="#home-section">Acceuil</a>
                     </li>
