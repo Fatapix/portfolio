@@ -8,6 +8,7 @@
 // Import all files for desktop design
 @media (min-width: $breakpoint-tablet) {
     @import 'desktop/components/header';
+    @import 'desktop/components/home-section';
 }
 
 // Import all files for mobile design
@@ -35,4 +36,10 @@
         color: inherit;
         text-decoration: none;
     }
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
