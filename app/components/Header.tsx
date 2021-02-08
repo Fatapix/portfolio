@@ -12,9 +12,12 @@ export default function Header() {
                     <img src="/icons/icon-linkedin.svg" title="LinkedIn"/>
                 </a>
             </nav>
+            <div className="menu-icon">
+                <span></span>
+            </div>
             <nav className="navigation-bar">
                 <ul className="links">
-                    <li className="item">
+                    <li className="item active">
                         <a className="link" href="#home-section">Acceuil</a>
                     </li>
                     <li className="item">
@@ -27,6 +30,17 @@ export default function Header() {
                         <a className="link" href="#contacts-section">Contacts</a>
                     </li>
                 </ul>
+                <div className="contacts-mobile">
+                    <a href="https://github.com/Fatapix" title="GitHub">
+                        <img src="/icons/icon-github.svg"/>
+                    </a>
+                    <a href="#">
+                        <img src="/icons/icon-mail.svg" title="Mail"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/noha-khirat-1a7bb91a9/?originalSubdomain=fr">
+                        <img src="/icons/icon-linkedin.svg" title="LinkedIn"/>
+                    </a>
+                </div>
             </nav>
         </header>
     )

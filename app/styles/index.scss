@@ -2,10 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 // Import utils
+@import 'utils/breakpoints';
 @import 'utils/colors';
 
-// Import all components
-@import 'components/header';
+// Import all files for desktop design
+@media (min-width: $breakpoint-tablet) {
+    @import 'desktop/components/header';
+}
+
+// Import all files for mobile design
+@media (max-width: $breakpoint-mobile) {
+    @import 'mobile/components/header';
+}
+
+// Import all files for tablet design
+@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+    @import 'tablet/components/header';
+}
 
 * {
     margin: 0;

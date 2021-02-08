@@ -1,0 +1,57 @@
+header.header {
+    position: fixed;
+    width: 100%;
+
+    z-index: 10;
+
+    nav.socials-bar {
+        display: none;
+        opacity: 0;
+    }
+    nav.navigation-bar {
+        position: relative;
+        height: 50px;
+        background-color: $background-black;
+
+        padding-left: 30px;
+        padding-right: 15px;
+
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul.links {
+            text-transform: uppercase;
+            .item{
+                float: left;
+                margin-right: 10px;
+                font-size: 20px;
+                font-weight: 300;
+                color: #fff;
+                a {
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                }
+            }
+
+            .item.active a {
+                transition-duration: 0.5s;
+                color: $font-blue;
+            }
+            .item a:hover {
+                color: $font-blue;
+            }
+        }
+
+        .contacts-mobile {
+            img{
+                width: 30px;
+                height: 30px;
+                margin: 2px;
+            }
+        }
+    }
+}

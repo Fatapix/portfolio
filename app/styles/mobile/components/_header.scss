@@ -1,0 +1,118 @@
+header.header {
+    position: fixed;
+    width: 100%;
+
+    z-index: 10;
+
+    nav.socials-bar {
+        display: none;
+        opacity: 0;
+    }
+    .menu-icon{
+        z-index: 15;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 54px;
+        height: 54px;
+    
+        transition: transform 0.5s;
+    }
+    .menu-icon span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%); 
+    
+        display: block;
+        width: 22px;
+        height: 2px;
+    
+        background-color: #FFF;
+    
+        transition: background 0.5s;
+    }
+    .menu-icon span::before, .menu-icon span::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-6px);
+    
+        display: block;
+        width: 22px;
+        height: 2px;
+    
+        background-color: #FFF;
+    
+        transition: transform 0.5s;
+    }
+    .menu-icon span::after {
+        transform: translateY(6px); 
+    }
+    .menu-icon.is-opened span {
+        background: transparent;
+    }
+    .menu-icon.is-opened span::before {
+        transform: translateY(0) rotate(45deg);
+    }
+    .menu-icon.is-opened span::after {
+        transform: translateY(0) rotate(-45deg);
+    }
+    nav.navigation-bar {
+        // display: none;
+        // opacity: 0;
+
+        position: relative;
+        height: 140px;
+        background-color: $background-black;
+
+        padding-left: 20px;
+        padding-right: 10px;
+
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        ul.links {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            margin-bottom: 15px;
+            margin-left: 40px;
+
+            text-transform: uppercase;
+            .item{
+                font-size: 22px;
+                font-weight: 300;
+                color: #fff;
+                a {
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                }
+            }
+
+            .item.active a {
+                transition-duration: 0.5s;
+                color: $font-blue;
+                font-weight: 400;
+            }
+            .item a:hover {
+                color: $font-blue;
+            }
+        }
+
+        .contacts-mobile {
+            margin-bottom: 5px;
+            img{
+                width: 30px;
+                height: 30px;
+                margin: 2px;
+            }
+        }
+    }
+}
