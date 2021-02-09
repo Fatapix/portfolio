@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 
-.section.home-section {
+section.home-section {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background: url('../../../public/background.jpg') no-repeat center;
+    background: url('../../public/background.jpg') no-repeat center;
     background-size: cover;
     
     .background-filter {

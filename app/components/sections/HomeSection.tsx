@@ -1,6 +1,6 @@
 export default function HomeSection() {
     return (
-        <section className="section home-section">
+        <section className="home-section">
             <div className="background-filter"></div>
             
             <span className="tags top-tags">&nbsp;&nbsp;&nbsp;&lt;body&gt;</span> 

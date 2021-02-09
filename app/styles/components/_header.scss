@@ -3,7 +3,6 @@ header.header {
     width: 100%;
     
     z-index: 10;
-    
     nav.socials-bar {
         position: relative;
         height: 45px;
@@ -21,8 +20,8 @@ header.header {
         }
         
         img:hover {
-                animation: hoverIcon 0.3s;
-            }
+            animation: hover-icon 0.3s;
+        }
     }
     nav.navigation-bar {
         position: relative;
@@ -64,18 +63,5 @@ header.header {
             display: none;
             opacity: 0;
         }
-    }
-}
-
-// All animations of header
-@keyframes hoverIcon {
-    from {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-4px);
-    }
-    to {
-        transform: translateY(2px);
     }
 }
