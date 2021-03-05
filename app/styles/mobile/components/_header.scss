@@ -1,8 +1,4 @@
 header.header {
-    nav.socials-bar {
-        display: none;
-        opacity: 0;
-    }
     .menu-icon{
         z-index: 15;
         position: absolute;
@@ -45,6 +41,7 @@ header.header {
     .menu-icon span::after {
         transform: translateY(6px); 
     }
+    
     .menu-icon.is-opened span {
         background: transparent;
     }
@@ -54,13 +51,18 @@ header.header {
     .menu-icon.is-opened span::after {
         transform: translateY(0) rotate(-45deg);
     }
+
+    nav.socials-bar {
+        display: none;
+        opacity: 0;
+    }
     nav.navigation-bar {
         // display: none;
         // opacity: 0;
 
         position: relative;
-        height: 140px;
-        background-color: $background-black;
+        height: 160px;
+        background-color: $background-black-glass;
 
         padding-left: 20px;
         padding-right: 10px;
@@ -68,20 +70,14 @@ header.header {
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
 
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-
         ul.links {
-            position: relative;
             display: flex;
+            align-items: center;
             flex-direction: column;
 
-            margin-bottom: 15px;
-            margin-left: 40px;
-
-            text-transform: uppercase;
             .item{
+                margin: 0;
+                height: 35px;
                 font-size: 22px;
                 font-weight: 300;
                 color: #fff;
@@ -102,7 +98,9 @@ header.header {
         }
 
         .contacts-mobile {
-            margin-bottom: 5px;
+            opacity: 1;
+            display: flex;
+            justify-content: end;
             img{
                 width: 30px;
                 height: 30px;
