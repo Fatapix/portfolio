@@ -2,10 +2,6 @@ export default function Header() {
     return (
         <header className="header">
             <nav className="socials-bar">
-                <div className="contacts-container">
-                    <label className="mail">contact@khirat-noha.fr</label>
-                    <label className="mail">06 72 53 07 47</label>
-                </div>
                 <div className="links-container">
                     <a href="https://github.com/Fatapix" title="GitHub">
                         <img src="/icons/icon-github.svg"/>

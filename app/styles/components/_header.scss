@@ -13,22 +13,12 @@ header.header {
         align-items: center;
         padding-right: 15px;
 
-        .contacts-container {
-            color: #fff;
-            label {
-                margin-right: 5px;
-                transition: 0.3s;
-            }
-            label:hover {
-                text-decoration: underline;
-            }
-        }
-
         .links-container {
+            margin-left: 10px;
             img {
                 width: 30px;
                 height: 30px;
-                margin: 5px;
+                margin-right: 5px;
             }
 
             img:hover {
