@@ -59,13 +59,21 @@ header.header {
     nav.navigation-bar {
         display: none;
         opacity: 0;
+    }
+
+    nav.navigation-bar.is-opened {
+        display: block;
+        opacity: 1;
 
         position: relative;
+
+        height: 160px;
+
+        animation: bounce-menu .7s;
 
         display: flex;
         justify-content: center;
 
-        height: 160px;
         background-color: $background-black-glass;
 
         padding-left: 20px;

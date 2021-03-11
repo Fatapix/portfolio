@@ -1,4 +1,12 @@
 export default function Header() {
+
+    const toggleBurger = function() {
+        const icon = document.querySelector('.menu-icon')
+        const navBar =  document.querySelector('.navigation-bar')
+        icon.classList.toggle('is-opened')
+        navBar.classList.toggle('is-opened')
+    }
+
     return (
         <header className="header">
             <nav className="socials-bar">
@@ -14,7 +22,7 @@ export default function Header() {
                     </a>
                 </div>
             </nav>
-            <div className="menu-icon">
+            <div className="menu-icon" onClick={toggleBurger}>
                 <span></span>
             </div>
             <nav className="navigation-bar">

@@ -19,3 +19,21 @@
         transform: translateY(20px);
     }
 }
+
+@keyframes bounce-menu {
+    from {
+        transform: translateY(-160px);
+    }
+    // 50% {
+    //     transform: translateY(0);
+    // }
+    // 65% {
+    //     height: 180px;
+    // }
+    // 73% {
+    //     height: 155px;
+    // }
+    to {
+        transform: translateY(0);
+    }
+}
