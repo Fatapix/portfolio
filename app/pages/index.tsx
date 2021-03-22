@@ -11,7 +11,7 @@ export default function Home({ projects }) {
   return (
     <Layout title="Portfolio - Développeur Web">
       <HomeSection />
-      <AboutSection />
+      {/* <AboutSection /> */}
       <PortfolioSection data={{ projects }} />
     </Layout>
   )

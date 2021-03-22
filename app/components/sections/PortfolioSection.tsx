@@ -14,7 +14,7 @@ export default function PortfolioSection({ data }) {
 
     return (
         <section className="portfolio-section">
-            <h1>TODO</h1>
+            <h1>Portfolio</h1>
             <div className="projects-container">
                 {data.projects.map((project) => (
                     <div className="card">

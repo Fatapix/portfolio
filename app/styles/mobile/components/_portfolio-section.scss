@@ -1,5 +1,22 @@
 section.portfolio-section {
 
+    background-color: $background-black;
+    padding: 15px 15px;
+
+    h1 {
+        color: #fff;
+        font-size: 33px;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: -.11em;
+        margin-bottom: 20px;
+    }
+    h1::after {
+        content: '';
+        display: block;
+        width: 100px; height: 4px;
+        background-color: $font-blue;
+    }
+
     .projects-container {
         position: relative;
         height: 100%;
@@ -11,15 +28,19 @@ section.portfolio-section {
             display: flex;
             flex-direction: column;
 
+            background-color: #fff;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            box-shadow: -8px -8px 0px 0px lighten($background-black, 5%);
+
             width: 90%;
             height: auto;
 
-            border: 2px solid $background-black;
-            border-radius: 1%;
-
-            margin-bottom: 5px;
+            margin-bottom: 25px;
 
             .card-img img {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
                 display: flex;
                 width: 100%;
 
@@ -29,11 +50,19 @@ section.portfolio-section {
             .card-content {
                 display: flex;
                 flex-direction: column;
-                text-align: center;
-
+                
                 h2 {
-                    text-decoration: underline;
                     margin-bottom: 10px;
+                    margin-left: 4px;
+                    color: $background-black;
+                    font-family: 'Roboto', sans-serif;
+                    letter-spacing: -.08em;
+                }
+                h2::after {
+                    content: '';
+                    display: block;
+                    width: 90px; height: 3px;
+                    background-color: $background-red;
                 }
                 p {
                     margin-left: 5px;
