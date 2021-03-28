@@ -1,27 +1,47 @@
 section.portfolio-section {
+    height: auto;
+    background-color: $background-black;
 
-    padding: 15px 15px;
+    padding: 5px 10px;
 
     h1 {
-        font-size: 33px;
-        letter-spacing: -.11em;
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        font-size: 52px;
+        letter-spacing: -.06em;
         margin-bottom: 20px;
     }
     h1::after {
         content: '';
         display: block;
-        width: 100px; height: 4px;
+        width: 130px; height: 5px;
         background-color: $font-blue;
     }
 
     .projects-container {
-        flex-direction: column;
-        align-items: center;
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        //padding: 5px 25px;
+
+        margin-top: 30px;
 
         .card {
-            width: 90%;
+            display: flex;
+            flex-direction: column;
+
+            background-color: #fff;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            box-shadow: -8px -8px 0px 0px lighten($background-black, 5%);
+
+            width: 30%;
+            min-width: 340px;
             height: auto;
 
+            margin-right: 20px;
             margin-bottom: 25px;
 
             .card-img img {
